@@ -1,0 +1,159 @@
+
+.courses-offered-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+}
+
+/* Styling the section */
+.courses-offered {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* short container */
+.course-container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion{
+  background-color: rgb(218, 230, 230);
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: .5rem, 2px .5rem rgba(0,0,0,.1);
+}
+
+#accordion-link {
+  color: rgba(24, 20, 20, 0.8);
+  font-size: 3rem;
+  text-decoration: none;
+  width: 100% !important;
+  display: flex !important; 
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: space-between !important;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.add {
+  /* font-size: 2.8rem; */
+  padding: .5rem;
+}
+
+.remove{
+  /* font-size: 64px; */
+  display: none;
+  padding: .5rem;
+}
+
+.course-description{
+  /* max-height: 0; */
+  display: none;
+  /* overflow: hidden; */
+  position: relative;
+  background-color: aliceblue;
+  transition: 2s;
+}
+
+.accordion.active .course-description {
+  display: block;
+}
+
+.course-description::before {
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 90%;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.course-description p {
+  font-size: 2rem;
+  color: rgba(19, 18, 18, 0.6);
+  padding: 2rem;
+}
+
+.accordion.active #accordion-link .add {
+  display: none;
+}
+
+.accordion.active #accordion-link .remove {
+  display: block; 
+}
+
+.forReg {
+  display: flex;
+  /* padding: 5rem; */
+  /* align-items: center; */
+  justify-content: space-between;
+  /* text-align: center; */
+  margin: 2rem;
+}
+#reg {
+  margin-left: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(16, 58, 245, 0.5);
+  color: black;
+  /* padding: 10px; */
+  height: 4rem;
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+#loginForm i {
+  margin-left: 90%;
+  cursor: pointer;
+  margin-top: -10%;
+  position: absolute;
+  /* z-index: 1; */
+}
+
+#pass_div {
+  position: relative;
+  /* display: flex; */
+}
