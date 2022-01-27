@@ -86,7 +86,7 @@ app.post('/register', async (req, res) => {
 
   const data = `<h3>Email Verification</h3>
   <p>Welcome ${req.body.firstname} ${req.body.lastname}</p>
-  <a href="https://oluaka-lms.herokuapp.com/login_page.html">Click here to login</a>
+  <a href="https://oluaka-lms2.herokuapp.com/login_page.html">Click here to login</a>
   `;
 
   const userExists = await User.findOne({ email });
