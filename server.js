@@ -107,35 +107,37 @@ app.post('/register', async (req, res) => {
       programs,
       courses
     })
-    res.json({message: "Your account has been created successfully check your mail for further instruction. if you dont see it in your inbox, check your spam. If is not there that means your email is invalid, go and register again."})
-  }
+    res.json({message: "Your account has been created successfully check your mail for further instruction. if you dont see it in your inbox, check your spam. If is not there that means your email is invalid, go and register again."});
 
-  let transporter = nodemailer.createTransport({
-    host: 'smtp.mail.yahoo.com',
-    port: 587,
-    secure: false, // upgrade later with STARTTLS
-    auth: {
-      user: 'spiritcat@yahoo.com',
-      pass: 'zrechdvogjyzgtvz',
-    },
-    tls: {
-      rejectUnauthorized:false
-    }
-  })
-  
-  
-  const mailOptions = {
-    from: '"Oluaka Learnning Management" <spiritcat@yahoo.com>', // sender address
-    to: req.body.email, // list of receivers
-    subject: 'Account Creation and Activation', // Subject line
-    html: data, // plain text body
-  }
-
-  transporter.sendMail(mailOptions, (error, info) =>{
-    if (error) console.log(error)
-    else console.log(info)
+    let transporter = nodemailer.createTransport({
+      host: 'smtp.mail.yahoo.com',
+      port: 587,
+      secure: false, // upgrade later with STARTTLS
+      auth: {
+        user: 'spiritcat@yahoo.com',
+        pass: 'zrechdvogjyzgtvz',
+      },
+      tls: {
+        rejectUnauthorized:false
+      }
+    })
     
-  })
+    
+    const mailOptions = {
+      from: '"Oluaka Learnning Management" <spiritcat@yahoo.com>', // sender address
+      to: req.body.email, // list of receivers
+      subject: 'Account Creation and Activation', // Subject line
+      html: data, // plain text body
+    }
+  
+    transporter.sendMail(mailOptions, (error, info) =>{
+      if (error) console.log(error)
+      else console.log(info)
+      
+    })
+  }
+
+  
   
 })
 
