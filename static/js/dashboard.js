@@ -30,20 +30,25 @@ file.addEventListener('change', function(){
 
 //AN ALERT MESSAGE TO LOGOUT (TRIAL)
 btn.addEventListener('click', () =>{
-  let modal = alert('Do you want to leave the page?')
-  location.assign("login_page.html")
+  let modal = confirm('Do you want to leave this page?')
+  if(modal == true){
+    location.assign("login_page.html")
+  }else{
+    location.assign('#')
+  }
+  
 })
 
 
 
 //made a one page display for the nav menus (TRIAL)
-dashboardBtn.addEventListener('click', () =>{
-  profile.style.display = 'none'
-  dashboard.style.display = 'block'
-})
+// dashboardBtn.addEventListener('click', () =>{
+//   profile.style.display = 'none'
+//   dashboard.style.display = 'block'
+// })
 
-profileBtn.addEventListener('click', ()=>{
-  profile.style.display = 'block'
-  dashboard.style.display = 'none'
-})
+// profileBtn.addEventListener('click', ()=>{
+//   profile.style.display = 'block'
+//   dashboard.style.display = 'none'
+// })
 

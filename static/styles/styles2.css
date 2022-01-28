@@ -311,50 +311,25 @@ form{
 .modal-body{
   background-color: rgb(24, 24, 24,0.2);
 }
+.modal-body h3 a i{
+  color: #198485;
+}
 #password{
   position: relative;
 }
 
 
-/* DASHBOARD STYLINGS STARTS */
-#offcanvas-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#offcanvas-nav .pic-holder{
-  width: 150px;
-  height: 150px;
-  margin: auto;
-}
-.nav-menu {
-  margin-top: 40px;
-  margin-left: 30px;
-}
-.nav-menu .nav-link{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: larger;
-}
 
+/* STUDENT DASHBOARD STYLINGS STARTS */
 
 /* PROFILE-PIC UPLOAD STYLINGS */
 
-.profile-pic-wrapper {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
 .pic-holder {
   text-align: center;
   position: relative;
   border-radius: 50%;
   width: 150px;
-  height: 150px;
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -405,13 +380,81 @@ form{
   opacity: 1;
 }
 
-#profile{
-  display: none;
-  background-color: #fff;
+/* OFFCANVAS STYLINGS */
+
+#offcanvas-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-#dashboard{
-  background-color: #000;
+#offcanvas-nav .pic-holder{
+  width: 150px;
+  height: 150px;
+  margin: auto;
 }
+.nav-menu {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.nav-menu .nav-link{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+}
+
+/* DASHBOARD BODY STYLING STARTS*/
+#dash-body{
+  background-color: #F4F5F9;
+  padding-top: 20px;
+}
+#dashboardBtn{
+  border-top-left-radius: 30px;
+  background-color: #0B5ED7;
+  color: #fff;
+}
+#dashboardBtn:hover{
+  font-size: x-large;
+  transition: all 0.5s ease-in-out;
+}
+#top-div{
+  background-image: url(../images/layered-waves-haikei\ \(1\).svg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F4F5F9;
+  border-radius: 10px;
+}
+#top-btn{
+  background-color: #FF6584;
+}
+#top-img{
+  width: 350px;
+}
+#course-section a{
+  text-decoration: none;
+}
+.card{
+  height: auto;
+  background-color: #F4F5F9 !important;
+}
+.card-image{
+ width: 100%;
+}
+.card-image img{
+  width: 100%;
+  background-position: center;
+}
+#PD-footer{
+  background-color: #FF6584;
+}
+.footer{
+  border-bottom: 2px solid rgb(181, 181, 243);
+}
+.footer-text{
+  display: flex;
+  justify-content: end;
+}
+/* DASHBOARD BODY STYLING ENDS */
+
 
 /* MEDIA QUERY STARTS*/
 
@@ -476,6 +519,9 @@ form{
         right: 15px;
         bottom: 10px;
       }
+
+      /* DASHBOARD PAGE */
+      
   }
 
 @media (max-width: 375px){
@@ -564,6 +610,17 @@ form{
   .body-image{
     width: 500px;
     margin-right: 20px;
+  }
+}
+
+@media(max-width: 540px){
+  /* DASHBOARD */
+  #dash-body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #top-div{
+    margin-top: 0 !important;
   }
 }
 /* MEDIA QUERY ENDS */

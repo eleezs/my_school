@@ -17,10 +17,11 @@
             <button class="bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                  <i class="fa fa-bars p-2" aria-hidden="true"></i>            
             </button>
-            <a href="#" class="navbar-brand" id="tochy"><h4>WELCOME USER</h4></a>
+            <!-- <a href="#" class="navbar-brand" id="tochy"><h4>WELCOME USER</h4></a> -->
             <button class="btn btn-md btn-primary" id="btn">LOG OUT</button>
         </div>
     </nav>
+    
     <!-- OFFCANVAS MENU -->
     <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 300px;">
         <div class="offcanvas-header">
@@ -49,7 +50,7 @@
                 
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#dashboard" class="nav-link" id="dashboardBtn"> <i class="bi bi-menu-button-wide"></i>  Dashboard</a>
+                        <a href="#dashboard" class="nav-link" id="dashboardBtn"> <i class="bi bi-menu-button-wide"></i>Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a href="#profile" class="nav-link" id="profileBtn"> <i class="bi bi-person"></i> Profile</a>
@@ -57,27 +58,185 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link"> <i class="bi bi-bell"></i> Notification</a>
                     </li>
+                    <li class="nav-item">
+                      <a href="Teachers.html" class="nav-link"> <i class="bi bi-cast"></i> Teachers</a>
+                  </li>
                 </ul>
             </div>
         </div>
     </div>
 
+    <!-- DASHBOARD STARTS HERE -->
+    <section id="dash-body">
+      <div class="container mt-5 pt-4" id="top-div">
+            <div class="row p-2" id="top-row">
+              <div class="col-md mt-5 p-3 g-5" id="W-up">
+                <h3>WELCOME BACK TOCHY !</h3>
+                <p class="lead">Check out a course page to see your progress <br> and find helpful resources</p>
+                <a href="#" class="btn btn-lg" id="top-btn"> Learn More</a>
+              </div>
 
-
-    <section id="dashboard">
-        <div class="profile-pic-wrapper">
-            <h1>DASHBOARD COMES IN HERE</h1>
+              <div class="col-md m-4 g-5">
+                <img src="images/undraw_scrum_board_re_wk7v.svg" alt="task board img" class="image-fluid" id="top-img">
+              </div>
+            </div>
+      </div>
+      
+      <!-- COURSE SECTION  -->
+      <div class="container mt-3 p-5" id="course-section">
+        <div class="section-title m-5 text-center">
+          <h3 class="title-text">AVAILABLE COURSES</h3>
         </div>
+        
+        <div class="row g-4 text-center" id="row-div">
+          
+            <div class="col-md">
+              <a href="#">
+                <div class="card bg-light text-center" id="ui/ux-card">
+                  <div class="card-body">
+                      <p class="card-title lead text-dark ">ENTREPRENEURIAL DEVELOPMENT</p>
+                      <div class="card-image">
+                        <img src="images/ENT.jpg" alt="" class="image-fluid">
+                      </div>
+                      <div class="card-footer bg-primary">
+                        <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                      </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          
+          <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">NETWORK & SYSTEM SECURITY</p>
+                   <div class="card-image">
+                    <img src="images/N & S image.jpg" alt="" class="image-fluid">
+                  </div>
+                    <div class="card-footer bg-primary">
+                      <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">HARDWARE ENGINEERING</p>
+                    <div class="card-image">
+                      <img src="images/hardware dev.jpg" alt="" class="image-fluid">
+                    </div>
+                    <div class="card-footer bg-primary">
+                      <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center" id="works-card">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">SOFTWARE ENGINEERING</p>
+                    <div class="card-image">
+                      <img src="images/software dev.jpg" alt="" class="image-fluid">
+                    </div>
+                    <div class="card-footer bg-primary">
+                      <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </a> 
+        </div>
+
+
+        <div class="row g-4 Qtext-center">
+            <div class="col-md">
+              <a href="#">
+                <div class="card bg-light text-center" id="ui/ux-card">
+                  <div class="card-body">
+                      <p class="card-title lead text-dark">ETHICAL HACKING</p>
+                      <div class="card-image">
+                        <img src="images/ethical hacking.jpg" alt="" class="image-fluid">
+                      </div>
+                      <div class="card-footer bg-primary">
+                        <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                      </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+        
+        
+          <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center" id="works-card">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">PRODUCT DESIGN </p>
+                    <div class="card-image">
+                      <img src="images/product design.jpg" alt="" class="image-fluid">
+                    </div>
+                    <div class="card-footer" id="PD-footer">
+                      <p class="lead text-light">Purchased <i class="bi bi-cart-check"></i></p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          
+          <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center" id="works-card">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">UI/UX DESIGN</p>
+                    <div class="card-image" id="card-image">
+                      <img src="images/ui.jpg" alt="" class="image-fluid">
+                    </div>
+                    <div class="card-footer bg-primary">
+                      <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- <div class="col-md">
+            <a href="#">
+              <div class="card bg-light text-center" id="works-card">
+                <div class="card-body">
+                    <p class="card-title lead text-dark">UI/UX DESIGN</p>
+                    <div class="card-image" id="card-image">
+                      <img src="images/ui.jpg" alt="" class="image-fluid">
+                    </div>
+                    <div class="card-footer bg-primary">
+                      <p class="lead text-light">Enroll<i class="bi bi-plus"></i></p>
+                    </div>
+                </div>
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+  
     </section>
 
-
-
-  <section id="profile">
-    <div class="profile-pic-wrapper">
-          <h1 style="color: #000;">PROFILE COMES IN HERE</h1>
-    </div>
+    <footer>
+      <div class="footer p-2 bg-dark text-primary">
+       <p class=" lead footer-text text-light">&copy Oluaka Tech Department</p> 
+      </div>
+    </footer>
   
-  </section>
+
+
+
+  
 
     
     <script src="js/bootstrap.min.js"></script>
